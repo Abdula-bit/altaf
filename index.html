@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALTAF Voice Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button id="newChatBtn">➕ New Chat</button>
+      </div>
+      <ul class="chat-list" id="chatList"></ul>
+      <div class="sidebar-footer">
+        <label>
+          <input type="checkbox" id="darkModeToggle" /> 🌙 Dark Mode
+        </label>
+        <button id="exportBtn">📘 Export</button>
+      </div>
+    </aside>
+
+    <main class="chat-window">
+      <header class="chat-header">
+        <h1>🤖 ALTAF Assistant</h1>
+      </header>
+
+      <section id="chatOutput" class="chat-output">
+        <div class="message assistant">Hi! How can I help you today?</div>
+      </section>
+
+      <footer class="chat-controls">
+        <input type="text" id="textInput" placeholder="Type a message...">
+        <button id="submitText">📨</button>
+        <button id="talkButton">🎙️</button>
+        <button id="listenButton">🎧</button>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
